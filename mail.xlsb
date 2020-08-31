@@ -1,0 +1,25 @@
+Private Sub CommandButton1_Click()
+mailStart
+
+Beep
+
+End Sub
+
+Private Sub CommandButton2_Click()
+mailEnd
+
+Beep
+
+End Sub
+
+'Dim ButtonOneClick As Boolean 'Make sure this is before all subs
+'Sub CommandButton3_Click()
+'ButtonOneClick = True
+'If ButtonOneClick Then
+'    MsgBox "Button 1 Was Clicked"
+    
+'Else
+ '   MsgBox "Button 1 Was NOT Clicked"
+'End If
+'End Sub
+
