@@ -1,0 +1,35 @@
+Sub mailStart()
+'Must add references (Tools > References) to
+' 1) OLE Automation
+' 2) Microsoft Outlook xx.0 Object Library
+Dim OutApp As Object
+Dim emailItem As Object
+Dim sh As Worksheet
+Dim answer As VbMsgBoxResult
+
+Set OutApp = CreateObject("Outlook.Application")
+Set emailItem = OutApp.CreateItem(0)
+'Set sh = Sheets("Sheet1")
+
+'answer = MsgBox("Do you want to edit?", vbYesNo, "runMacro")
+'If answer = vbYes Then
+
+'emailItem.To = "..."
+'emailItem.Subject = "HO START"
+'emailItem.HTMLBody = "Hej Piotrek!"
+'emailItem.Display True
+'End If
+
+'If answer = vbNo Then
+emailItem.To = "..."
+emailItem.Subject = "HO START"
+emailItem.HTMLBody = "Hej Piotrek!"
+emailItem.Send
+
+'End If
+
+'emailItem.Display True 'comment this out if you don't want to display email
+'myMail.send 'comment this out if you don't want to send yet
+
+ 
+End Sub
